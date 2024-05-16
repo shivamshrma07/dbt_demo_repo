@@ -1,17 +1,16 @@
-
 version: 2
 
 models:
-    - name: ss_table1
-      description: "Table"
-      columns:
-          - name: class
-            description: "Unique and Null"
-            tests:
-                - unique
-                - not_null
-          - name: count
-            description: "Not Unique but Null"
-            tests:
-                - unique
-                - not_null
+  - name: ss_table1
+    description: "Table"
+    columns:
+      - name: class
+        description: "Unique and Null"
+        tests:
+          - unique
+          - not_null
+      - name: count
+        description: "Not Unique but Null"
+        tests:
+          - unique
+          - not_null
