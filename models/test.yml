@@ -10,3 +10,8 @@ models:
             tests:
                 - unique
                 - not_null
+          - name: count
+            description: "Not Unique but Null"
+            tests:
+                - unique
+                - not_null
