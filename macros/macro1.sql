@@ -1,3 +1,3 @@
 {% macro var_1() %}
-  {% set class = 'medium' %}
+  {% select 'medium' %}
 {% endmacro %}
