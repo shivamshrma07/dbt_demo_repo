@@ -43,3 +43,8 @@ models:
 
 vars :
   class : 'medium'
+  dqm_db : 'DBT_TEST_DATABASE'
+  dqm_schema : 'DBT_TEST_SCHEMA'
+  dqm_config_table : 'DQM'
+  dataset_table : 'DATASET'
+  process_table : 'PROCESS'
