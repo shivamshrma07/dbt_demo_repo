@@ -22,6 +22,8 @@ models:
         tests:
           - unique
           - not_null
+          - expression_is_true:
+              expression: "/10 = 2"
       - name: count
         description: "Not Unique but Null"
         tests:
