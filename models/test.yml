@@ -17,7 +17,7 @@ models:
   - name: ss_table2
     description: "Table"
     columns:
-      - name: class
+      - name: cc_class
         description: "Unique and Null"
         tests:
           - unique
