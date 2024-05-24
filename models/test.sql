@@ -1,2 +1,2 @@
 {{ config(materialized='table') }}
-dqm_check(1)
+select dqm_check('1') as dqmid
