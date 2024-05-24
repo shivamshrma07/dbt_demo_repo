@@ -14,3 +14,16 @@ models:
         tests:
           - unique
           - not_null
+  - name: ss_table2
+    description: "Table"
+    columns:
+      - name: class
+        description: "Unique and Null"
+        tests:
+          - unique
+          - not_null
+      - name: count
+        description: "Not Unique but Null"
+        tests:
+          - unique
+          - not_null
