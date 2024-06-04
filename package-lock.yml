@@ -1,6 +1,8 @@
 packages:
   - package: elementary-data/elementary
     version: 0.15.2
+  - git: https://github.com/sangam-zs/dbt-test-repo.git
+    revision: 1aea05a66ad97270d1244f4699e4a2165ea07aa3
   - package: dbt-labs/dbt_utils
     version: 1.1.1
-sha1_hash: e6805a1ca761a27636f20c779c551d9dd43c04da
+sha1_hash: 0dbb398bb7730c5545751c17675c0a4fd3d794b6

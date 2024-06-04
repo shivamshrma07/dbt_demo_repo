@@ -1,31 +1,39 @@
 version: 2
 
 models:
-  - name: ss_table1
-    description: "Table"
-    columns:
-      - name: class
-        description: "Unique and Null"
-        tests:
-          - unique
-          - not_null
-      - name: count
-        description: "Not Unique but Null"
-        tests:
-          - unique
-          - not_null
-  - name: ss_table2
-    description: "Table"
-    columns:
-      - name: cc_class
-        description: "Unique and Null"
-        tests:
-          - unique
-          - not_null
-      - name: count
-        description: "Not Unique but Null"
-        tests:
-          - unique
-          - not_null
-          - expression_is_true:
-            expression: "/10 >= 2"
+#   - name: ss_table1
+#     description: "Table"
+#     columns:
+#       - name: class
+#         description: "Unique and Null"
+#         tests:
+#           - unique
+#           - not_null
+#       - name: count
+#         description: "Not Unique but Null"
+#         tests:
+#           - unique
+#           - not_null
+#   - name: ss_table2
+#     description: "Table"
+#     columns:
+#       - name: cc_class
+#         description: "Unique and Null"
+#         tests:
+#           - unique
+#           - not_null
+#       - name: count
+#         description: "Not Unique but Null"
+#         tests:
+#           - unique
+#           - not_null
+#           - expression_is_true :
+#               expression : "/10 >= 2"
+    - name: ss_table1
+      description: "A test dbt model"
+      columns:
+          - name: COUNT
+            description: "The primary key for this table"
+            tests:
+                - count_value_check:
+                    value: 21
