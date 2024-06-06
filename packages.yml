@@ -1,4 +1,2 @@
 packages:
-  - package: elementary-data/elementary
-    version: 0.15.2
   - git: "https://{{env_var('DBT_DQM_PACKAGE_USER')}}:{{env_var('DBT_DQM_PACKAGE_PAT')}}@github.com/sangam-zs/dbt-test-repo.git"
